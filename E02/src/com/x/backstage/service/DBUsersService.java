@@ -1,7 +1,7 @@
 package com.x.backstage.service;
 
-import com.x.backstage.pojo.DBUsers;
+import com.x.backstage.pojo.DbUsers;
 
 public interface DBUsersService {
-	public DBUsers getDBUsersquery();
+	public DbUsers getselectByPrimaryKey(int id);
 }
