@@ -3,18 +3,16 @@ package com.x.backstage.mapper;
 import com.x.backstage.pojo.DbUsers;
 
 public interface DBUsersMapper {
-	public DbUsers selectByPrimaryKey();
+	public int deleteByPrimaryKey(Integer id);
 
-	int deleteByPrimaryKey(Integer id);
+	public int insert(DbUsers record);
 
-	int insert(DbUsers record);
+	public int insertSelective(DbUsers record);
 
-	int insertSelective(DbUsers record);
+	public DbUsers selectByPrimaryKey(Integer id);
 
-	DbUsers selectByPrimaryKey(Integer id);
+	public int updateByPrimaryKeySelective(DbUsers record);
 
-	int updateByPrimaryKeySelective(DbUsers record);
-
-	int updateByPrimaryKey(DbUsers record);
+	public int updateByPrimaryKey(DbUsers record);
 
 }

@@ -10,6 +10,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <title>首页</title> 
   </head>
   <body>
-    This is my JSP page. <br>
+    
   </body>
 </html>

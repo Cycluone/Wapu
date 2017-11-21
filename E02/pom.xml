@@ -101,7 +101,23 @@
 			<artifactId>mysql-connector-java</artifactId>
 			<version>5.1.38</version>
 		</dependency>
-
+		<!-- 再从新用逆向工程生成代码导入到工程时junit测试失败  下面是错误     采用网上解决办法是添加下面的架包-->
+		<!-- 错误为 Caused by: java.lang.NoClassDefFoundError: com/x/backstage/mapper/DbUsersMapper (wrong name: com/x/backstage/mapper/DBUsersMapper)-->
+		<dependency>  
+            <groupId>com.fasterxml.jackson.core</groupId>  
+            <artifactId>jackson-core</artifactId>  
+            <version>2.1.0</version>  
+        </dependency>  
+        <dependency>  
+            <groupId>com.fasterxml.jackson.core</groupId>  
+            <artifactId>jackson-databind</artifactId>  
+            <version>2.1.0</version>  
+        </dependency>  
+        <dependency>  
+            <groupId>com.fasterxml.jackson.core</groupId>  
+            <artifactId>jackson-annotations</artifactId>  
+            <version>2.1.0</version>  
+        </dependency>  
 	</dependencies>
 	<build>
 		<sourceDirectory>${basedir}/src</sourceDirectory>

@@ -16,8 +16,17 @@ public class Test {
 	private DBUsersService dbservice;
 	@org.junit.Test
 	public void test1(){
-		DbUsers users = dbservice.getselectByPrimaryKey(1);
-		System.out.println(users.getAddress());
+		
+		DbUsers record = new DbUsers(2,"dengshuxing",19,"∫˛ƒœ…€—Ù","18868363026",2);
+		//ÃÌº”
+		int i = dbservice.operationInsert(record);
+		System.out.println(i);
+		
+		
+		
+		//≤È—Ø
+		//DbUsers users = dbservice.operationSelectByPrimaryKey(1);
+		//System.out.println(users.getAddress());
 	}
 
 }

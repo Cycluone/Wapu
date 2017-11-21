@@ -13,7 +13,22 @@ public class DbUsers {
 
     private Integer oid;
 
-    public Integer getId() {
+    public DbUsers() {
+		super();
+	}
+
+	public DbUsers(Integer id, String name, Integer age, String address,
+			String phone, Integer oid) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.age = age;
+		this.address = address;
+		this.phone = phone;
+		this.oid = oid;
+	}
+
+	public Integer getId() {
         return id;
     }
 
@@ -60,4 +75,11 @@ public class DbUsers {
     public void setOid(Integer oid) {
         this.oid = oid;
     }
+
+	@Override
+	public String toString() {
+		return "DbUsers [address=" + address + ", age=" + age + ", id=" + id
+				+ ", name=" + name + ", oid=" + oid + ", phone=" + phone + "]";
+	}
+    
 }

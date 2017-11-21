@@ -10,7 +10,27 @@ public class DBUusersServiceImpl implements DBUsersService {
 	@Autowired
 	private DBUsersMapper mapper;
 	 
-	public DbUsers getselectByPrimaryKey(int id) {
+	public DbUsers operationSelectByPrimaryKey(int id) {
 		return mapper.selectByPrimaryKey(id);
+	}
+
+	public int operationDeleteByPrimaryKey(Integer id) {
+		return mapper.deleteByPrimaryKey(id);
+	}
+
+	public int operationInsert(DbUsers record) {
+		return mapper.insert(record);
+	}
+
+	public int operationInsertSelective(DbUsers record) {
+		return mapper.insertSelective(record);
+	}
+
+	public int operationUpdateByPrimaryKey(DbUsers record) {
+		return mapper.updateByPrimaryKey(record);
+	}
+
+	public int operationUpdateByPrimaryKeySelective(DbUsers record) {
+		return mapper.updateByPrimaryKeySelective(record);
 	}
 }
