@@ -47,7 +47,7 @@
 			<version>2.1</version>
 			<scope>provided</scope>
 		</dependency>
-		<!-- 阿里巴巴druid数据源的jar包依赖 -->
+		<!-- 阿里巴巴druid数据库连接池的jar包依赖 -->
 		<dependency>
 			<groupId>com.alibaba</groupId>
 			<artifactId>druid</artifactId>
